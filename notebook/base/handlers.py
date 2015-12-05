@@ -213,7 +213,7 @@ class IPythonHandler(AuthenticatedHandler):
     @property
     def allow_origin(self):
         """Normal Access-Control-Allow-Origin"""
-        return self.settings.get('allow_origin', '')
+        return self.settings.get('allow_origin', '*')
     
     @property
     def allow_origin_pat(self):
